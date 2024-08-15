@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date/Time Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Date/Time Calculator</h1>
+        <div class="calculator">
+            <h2>Find the Difference Between Two Dates</h2>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+            <button onclick="calculateDifference()">Calculate Difference</button>
+            <p id="differenceResult"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>Add/Subtract Days from a Date</h2>
+            <label for="baseDate">Base Date:</label>
+            <input type="date" id="baseDate">
+            <label for="days">Days to Add/Subtract:</label>
+            <input type="number" id="days" value="0">
+            <button onclick="calculateNewDate()">Calculate New Date</button>
+            <p id="newDateResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
